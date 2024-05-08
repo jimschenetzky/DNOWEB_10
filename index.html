@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deporte Femenino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://github.com/jimschenetzky/DNOWEB_01/blob/main/FAVICON.png?raw=true">
+    <script type="text/javascript">
+
+ window.onload = function () {
+    var estadisticas = new CanvasJS.Chart("estadisticas",
+    {
+      title:{
+        text: "Realización de actividad física"
+      },
+      toolTip: {
+        shared: true
+      },
+      axisY:{
+        title: ""
+      },
+      data:[
+      {
+        type: "stackedBar100",
+        showInLegend: true,
+        name: "No",
+        color: "#b91d47",
+        dataPoints: [
+        {y: 477, label: "Hombres" },
+        {y: 589, label: "Mujeres" },
+        
+        ]
+      },
+       {
+        type: "stackedBar100",
+        showInLegend: true,
+        name: "Si",
+        color: "#00aba9",
+        dataPoints: [
+        {y: 521, label: "Hombres" },
+        {y: 411, label: "Mujeres" },
+        
+        ]
+      },
+      
+      ]
+
+    });
+
+estadisticas.render();
+}
+</script>
+<script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+  </head>
+  <body>
+    <!-- este es el encabezado-->
+    <header class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="https://github.com/jimschenetzky/DNOWEB_10/blob/main/giphy.gif?raw=true" alt="woman lifting" style="width:400px;height:400px;">
+          <h1 class="display-3">Actividad Física y Deporte Femenino</h1>
+          <h2 class=""></h2>
+          <h3 class="fs-5">La importancia de la indumentaria.</h3>
+        </div>
+      </div>
+    </header>
+    <!-- Cuerpo-->
+    <main class="container">
+      <div class="row py-5">
+        <div class="col-11 col-md-9 col-lg-8 mx-auto">
+          <p class="lead">En el mundo del deporte, la indumentaria se erige como un aliado crucial, una compañera de ruta que no solo viste al atleta, sino que potencia su desempeño y garantiza su seguridad. En este viaje hacia la excelencia deportiva, las mujeres han sido históricamente relegadas al papel de espectadoras, mientras los hombres dominaban la escena. Pero hoy, estamos presenciando una transformación radical.</p>
+        </div>
+        <div class= "col-12" id="estadisticas" style="height: 300px; width: 100%;"></div>
+        <div class="col-12">
+        </div>
+        <div class="col-11 col-md-9 col-lg-8 mx-auto">
+          <p class="lead">Desde tiempos inmemoriales, la narrativa cultural nos enseñó que la fuerza y la actividad estaban reservadas para el género masculino, mientras que a las mujeres se les asociaba con la belleza y la pasividad. Esta noción, arraigada en las profundidades de la historia, las excluyó de los campos de juego y las pistas de competición. Sin embargo, el panorama está cambiando. La mujer moderna reclama su lugar en el mundo del deporte, y la indumentaria juega un papel esencial en esta revolución. No se trata solo de prendas; es un símbolo de poder, libertad y autodeterminación. Es aquí donde entran en juego los proyectos de diseño innovadores.</p>
+        </div>
+        <div class="col-11 col-md-9 col-lg-8 mx-auto">
+          <figure class="text-center">
+            <canvas id="encuesta" style="width:100%;max-width:900"></canvas>
+            <figcaption class="my-2 small">El 67,6% de las encuestadas indica que invertiría en indumentaria especializada.</figcaption>
+          </figure>
+          <p class="lead">Los proyectos de diseño en el ámbito del deporte y la actividad física están desafiando los límites establecidos, ofreciendo prendas que no solo son funcionales, sino también estilizadas y personalizadas para el cuerpo femenino. Desde telas que absorben la humedad hasta diseños ergonómicos que abrazan las curvas del cuerpo, estos proyectos están redefiniendo lo que significa vestirse para el éxito deportivo.</p>
+          <p class="lead">Al elegir la indumentaria adecuada, las mujeres no solo mejoran su rendimiento, sino que también desafían los estereotipos arraigados. Las telas tecnológicas y los diseños ergonómicos no solo ofrecen comodidad y seguridad, sino que también desafían la idea de que el deporte es exclusivo para hombres.</p>
+          <p class="lead">Sin embargo, la elección de una prenda inadecuada puede tener consecuencias graves. Un simple error puede llevar a infecciones o lesiones, especialmente en áreas sensibles como la zona genital. Por eso, es crucial que las mujeres se empoderen con el conocimiento sobre la importancia de la indumentaria deportiva adecuada.</p>
+        </div>
+        <div class="col-11 col-md-9 col-lg-8 mx-auto">
+          <figure>
+            <img src="https://github.com/jimschenetzky/DNOWEB_10/blob/main/mujeres.png?raw=true" class="w-100">
+            <figcaption class="text-center">5 de 6 encuestadas, indicaron tener complicaciones al utilizar ropa interior para ejercitarse.</figcaption>
+          </figure>
+        </div>
+        <div class="col-11 col-md-9 col-lg-8 mx-auto">
+          <p class="lead">En resumen, la indumentaria deportiva no es solo un conjunto de prendas; es una herramienta de empoderamiento, una declaración de independencia y una llave hacia un futuro donde las mujeres no solo participan en el deporte, sino que lo dominan. Es hora de que rompamos barreras, desafiemos convenciones y celebremos el poder transformador del deporte, la actividad física y el diseño innovador en la vida de las mujeres.</p>
+        </div>
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+var xValues = ["Si", "No"];
+var yValues = [67, 33];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+];
+
+new Chart("encuesta", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "¿Invertirías en indumentaria especializada?"
+    }
+  }
+});
+</script>
+    </main>
+
+    <!--footer-->
+    <footer class="bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-10 mx-auto text-center">
+            <p>Para mas información en proyectos deportivos para mujeres de diseño UC <a href="https://diseno.uc.cl/memorias/">haz click aquí<a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
